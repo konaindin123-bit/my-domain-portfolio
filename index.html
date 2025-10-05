@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domain Investor - Premium Domain Collection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="nav__logo">
+                    <h2>Domain Investor</h2>
+                </div>
+                <ul class="nav__menu">
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#domains">My Domains</a></li>
+                    <li><a href="#process">How to Buy</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="btn btn--primary" onclick="document.getElementById('chat-toggle').click()">Start Negotiation</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero__content">
+                <div class="hero__personal">
+                    <div class="personal-photo">
+                        <div class="photo-placeholder">DI</div>
+                    </div>
+                    <div class="personal-intro">
+                        <h1 class="hero__title">Premium Domain Collection</h1>
+                        <p class="hero__subtitle">12+ years of experience curating exceptional domains with strong commercial potential</p>
+                        <p class="hero__credentials">150+ domains sold • Tech, Business & Short Domain Specialist</p>
+                    </div>
+                </div>
+
+                <div class="hero__search">
+                    <div class="search-bar">
+                        <input type="text" id="domain-search" placeholder="Search my collection..." class="search-input">
+                        <button class="btn btn--primary search-btn">Search</button>
+                    </div>
+                </div>
+
+                <div class="hero__stats">
+                    <div class="stat">
+                        <h3>12+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat">
+                        <h3>150+</h3>
+                        <p>Domains Sold</p>
+                    </div>
+                    <div class="stat">
+                        <h3>$2.5M+</h3>
+                        <p>Total Sales</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <p>Experienced domain investor with a track record of successful sales</p>
+            </div>
+            
+            <div class="about__content">
+                <div class="about__story">
+                    <h3>My Domain Investment Journey</h3>
+                    <p>With over 12 years in the domain investment industry, I've developed an eye for identifying premium domains with strong commercial potential. I specialize in technology, business, and short domains that offer exceptional branding opportunities.</p>
+                    
+                    <p>Every domain in my collection is carefully selected based on factors like brandability, search volume, commercial appeal, and market trends. I've completed over 150 successful domain transactions, helping businesses find their perfect online identity.</p>
+                    
+                    <div class="specialties">
+                        <h4>My Specialties:</h4>
+                        <ul>
+                            <li>Technology & SaaS domains</li>
+                            <li>Business & finance names</li>
+                            <li>Short & memorable domains</li>
+                            <li>Emerging industry sectors</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="testimonials">
+                    <h3>What Buyers Say</h3>
+                    <div class="testimonial">
+                        <p>"Professional and smooth transaction. Great communication throughout the process."</p>
+                        <cite>- Tech Startup CEO</cite>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Found exactly what I was looking for. Fair pricing and expert guidance."</p>
+                        <cite>- Marketing Agency Owner</cite>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Domains Section -->
+    <section id="domains" class="domains">
+        <div class="container">
+            <div class="section-header">
+                <h2>My Domain Collection</h2>
+                <p>Carefully curated premium domains with strong commercial potential</p>
+            </div>
+
+            <div class="filters">
+                <div class="filter-group">
+                    <label>Category:</label>
+                    <select id="category-filter">
+                        <option value="">All Categories</option>
+                        <option value="Technology">Technology</option>
+                        <option value="Business">Business</option>
+                        <option value="Finance">Finance</option>
+                        <option value="Environment">Environment</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label>Extension:</label>
+                    <select id="extension-filter">
+                        <option value="">All Extensions</option>
+                        <option value="com">.com</option>
+                        <option value="org">.org</option>
+                        <option value="net">.net</option>
+                        <option value="io">.io</option>
+                        <option value="ai">.ai</option>
+                        <option value="eco">.eco</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label>Price Range:</label>
+                    <select id="price-filter">
+                        <option value="">All Prices</option>
+                        <option value="0-15000">Under $15,000</option>
+                        <option value="15000-30000">$15,000 - $30,000</option>
+                        <option value="30000-50000">$30,000 - $50,000</option>
+                        <option value="50000+">$50,000+</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="domains-grid" class="domains-grid">
+                <!-- Domains will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Buy Section -->
+    <section id="process" class="process">
+        <div class="container">
+            <div class="section-header">
+                <h2>How to Buy a Domain</h2>
+                <p>Simple, secure, and professional process</p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Browse & Contact</h3>
+                    <p>Browse my collection and contact me about domains that interest you. Use the live chat or contact form to start a conversation.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Negotiate & Agree</h3>
+                    <p>We'll discuss the domain details, value proposition, and negotiate a fair price that works for both of us.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Secure Transaction</h3>
+                    <p>Complete the purchase through a trusted escrow service like Escrow.com for maximum security and peace of mind.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Escrow Section -->
+    <section id="escrow" class="escrow">
+        <div class="container">
+            <div class="section-header">
+                <h2>Secure Transactions</h2>
+                <p>All purchases protected by trusted escrow services</p>
+            </div>
+            
+            <div class="escrow-content">
+                <div class="escrow-info">
+                    <h3>Why Use Escrow?</h3>
+                    <ul>
+                        <li>Protects both buyer and seller</li>
+                        <li>Funds held securely until domain transfer</li>
+                        <li>Professional domain verification</li>
+                        <li>Dispute resolution if needed</li>
+                        <li>Bank-grade security</li>
+                    </ul>
+                </div>
+                
+                <div class="escrow-providers">
+                    <h3>Trusted Escrow Partners</h3>
+                    <div class="provider">
+                        <h4>Escrow.com</h4>
+                        <p>My preferred service - used for 50+ transactions</p>
+                        <p>Fee: 3.25% (minimum $25)</p>
+                    </div>
+                    <div class="provider">
+                        <h4>Sedo Transfer Service</h4>
+                        <p>Great alternative with excellent international support</p>
+                        <p>Fee: 3.0% (minimum $30)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get in Touch</h2>
+                <p>Ready to discuss a domain? Let's talk!</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <strong>Email:</strong> domains@yourname.com
+                    </div>
+                    <div class="contact-item">
+                        <strong>Phone:</strong> +1 (555) 123-4567
+                    </div>
+                    <div class="contact-item">
+                        <strong>Response Time:</strong> Within 24 hours
+                    </div>
+                </div>
+                
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="domain-interest">Domain of Interest</label>
+                        <input type="text" id="domain-interest" name="domain-interest">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn--primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Domain Investor</h3>
+                    <p>Premium domain collection with 12+ years of experience in the industry.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#domains">My Domains</a></li>
+                        <li><a href="#process">How to Buy</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li>Domain Sales</li>
+                        <li>Domain Valuation</li>
+                        <li>Portfolio Consultation</li>
+                        <li>Escrow Services</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Domain Investor. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Domain Modal -->
+    <div id="domain-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-body">
+                <!-- Modal content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Live Chat Widget -->
+    <div id="chat-widget" class="chat-widget">
+        <button id="chat-toggle" class="chat-toggle">
+            <span class="chat-icon">💬</span>
+            <span class="chat-text">Chat Now</span>
+        </button>
+        
+        <div id="chat-window" class="chat-window">
+            <div class="chat-header">
+                <h4>Negotiate with Domain Owner</h4>
+                <button id="chat-close" class="chat-close">&times;</button>
+            </div>
+            
+            <div id="chat-messages" class="chat-messages">
+                <div class="message owner-message">
+                    <p>Hi! I'm here to discuss any of my domains. Which one interests you?</p>
+                    <span class="message-time">Just now</span>
+                </div>
+            </div>
+            
+            <div class="chat-input">
+                <input type="text" id="chat-input-field" placeholder="Type your message...">
+                <button id="chat-send" class="btn btn--primary">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
