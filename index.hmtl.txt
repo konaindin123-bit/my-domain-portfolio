@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>NamesPlug - Premium Domain Collection</title>
+  <style>
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      background: #fff;
+      color: #4B5563;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #3B82F6;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    .logo {
+      font-weight: bold;
+      font-size: 2rem;
+      letter-spacing: 2px;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 12px;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+    .hero {
+      background: #F8F9FA;
+      padding: 40px 18px 24px 18px;
+      text-align: center;
+    }
+    .stats {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      padding: 24px 0;
+      background: #EFF6FF;
+      margin-bottom: 0;
+    }
+    .stat {
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+    .about, .testimonials, .howtobuy, .escrow, .contact {
+      max-width: 700px;
+      margin: 32px auto;
+      background: #F8F9FA;
+      padding: 26px 22px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(59,130,246,0.04);
+    }
+    .testimonials blockquote {
+      border-left: 4px solid #3B82F6;
+      padding-left: 12px;
+      margin: 14px 0;
+      font-style: italic;
+      color: #222;
+    }
+    .domains-section {
+      max-width: 900px;
+      margin: 32px auto;
+      padding: 18px;
+    }
+    .search-row {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 22px;
+    }
+    input, select {
+      font-size: 1rem;
+      padding: 9px;
+      border: 1px solid #E5E7EB;
+      border-radius: 6px;
+      background: #fff;
+      margin-bottom: 4px;
+    }
+    .domain-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .domain-card {
+      width: 220px;
+      background: #fff;
+      border: 1px solid #E5E7EB;
+      border-radius: 9px;
+      box-shadow: 0 1px 6px rgba(59,130,246,0.06);
+      padding: 18px;
+      margin-bottom: 8px;
+      position: relative;
+    }
+    .premium-badge {
+      background: #F59E0B;
+      color: #fff;
+      font-weight: bold;
+      padding: 4px 8px;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      position: absolute;
+      top: 13px;
+      right: 13px;
+    }
+    .domain-card h3 {
+      margin: 0 0 8px 0;
+      font-size: 1.25rem;
+      color: #3B82F6;
+    }
+    .domain-card p {
+      margin: 4px 0;
+      font-size: 0.9rem;
+      color: #4B5563;
+    }
+    .domain-actions {
+      margin-top: 10px;
+      display: flex;
+      gap: 10px;
+    }
+    .btn {
+      background: #DC2626;
+      color: #fff;
+      border: none;
+      padding: 7px 16px;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      font-weight: 500;
+      transition: background 0.18s;
+    }
+    .btn:hover {
+      background: #B91C1C;
+    }
+    .footer {
+      background: #3B82F6;
+      color: #fff;
+      text-align: center;
+      padding: 22px 0 14px 0;
+      margin-top: 32px;
+      font-size: 1rem;
+    }
+    @media (max-width:700px) {
+      .stats { flex-direction: column; gap: 16px; }
+      .domain-card { width: 98vw; }
+      .domains-section { padding: 4px; }
+      .about, .testimonials, .howtobuy, .escrow, .contact { padding: 8vw 3vw; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">NamesPlug</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#domains">Domains</a>
+      <a href="#howtobuy">How to Buy</a>
+      <a href="#escrow">Escrow</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  
+  <section class="hero">
+    <h1>Premium Domain Collection</h1>
+    <p>12+ years of experience curating exceptional domains with strong commercial potential</p>
+    <p>150+ domains sold • Tech, Business &amp; Short Domain Specialist</p>
+  </section>
+  
+  <section class="stats">
+    <div class="stat">12+ Years Experience</div>
+    <div class="stat">150+ Domains Sold</div>
+    <div class="stat">$2.5M+ Total Sales</div>
+  </section>
+  
+  <section id="about" class="about">
+    <h2>About NamesPlug</h2>
+    <p>Experienced domain investor with a track record of successful sales. Specialist in tech, business, and short domains. Every domain in my collection is carefully selected for brandability, search volume, commercial appeal, and market trends.</p>
+  </section>
+  
+  <section class="testimonials">
+    <h2>Testimonials</h2>
+    <blockquote>
+      “Professional and smooth transaction. Great communication throughout the process.”<br>
+      <span>- Tech Startup CEO</span>
+    </blockquote>
+    <blockquote>
+      “Found exactly what I was looking for. Fair pricing and expert guidance.”<br>
+      <span>- Marketing Agency Owner</span>
+    </blockquote>
+  </section>
+  
+  <section id="domains" class="domains-section">
+    <h2>Carefully Curated Premium Domains</h2>
+    <div class="search-row">
+      <input type="text" id="domainSearch" placeholder="Search domains...">
+      <select id="categoryFilter">
+        <option value="all">All Categories</option>
+        <option value="tech">Tech</option>
+        <option value="finance">Finance</option>
+        <option value="travel">Travel</option>
+        <option value="energy">Energy</option>
+        <!-- more categories as needed -->
+      </select>
+      <select id="tldFilter">
+        <option value="all">All Extensions</option>
+        <option value=".com">.com</option>
+        <option value=".ai">.ai</option>
+        <option value=".io">.io</option>
+        <option value=".co">.co</option>
+        <option value=".org">.org</option>
+      </select>
+    </div>
+    <div id="domainGrid" class="domain-grid">
+      <!-- Dynamic domain cards -->
+    </div>
+  </section>
+  
+  <section id="howtobuy" class="howtobuy">
+    <h2>Simple, Secure, Professional Process</h2>
+    <ol>
+      <li>Browse my collection and contact me about domains that interest you. Use the live chat or contact form to start a conversation.</li>
+      <li>We'll discuss the domain details, value proposition, and negotiate a fair price that works for both of us.</li>
+      <li>Complete the purchase through a trusted escrow service like Escrow.com for maximum security and peace of mind.</li>
+    </ol>
+  </section>
+  
+  <section id="escrow" class="escrow">
+    <h2>All Purchases Protected by Trusted Escrow Services</h2>
+    <ul>
+      <li>My preferred service – used for 50+ transactions<br>Fee: 3.25% (minimum $25)</li>
+      <li>Great alternative with excellent international support<br>Fee: 3.0% (minimum $30)</li>
+    </ul>
+    <p>Escrow protects both buyer and seller, funds are held securely until domain transfer is complete. Bank-grade security, professional verification, and dispute resolution available.</p>
+  </section>
+  
+  <section id="contact" class="contact">
+    <h2>Contact NamesPlug</h2>
+    <form>
+      <label for="name">Your Name:</label><br>
+      <input type="text" id="name" name="name" required><br>
+      <label for="email">Your Email:</label><br>
+      <input type="email" id="email" name="email" required><br>
+      <label for="domainInterest">Domain of Interest:</label><br>
+      <input type="text" id="domainInterest" name="domainInterest"><br>
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4"></textarea><br>
+      <button class="btn" type="submit">Send Message</button>
+    </form>
+  </section>
+  
+  <footer class="footer">
+    &copy; 2025 NamesPlug. All rights reserved.
+  </footer>
+  
+  <script>
+    // Sample domain data
+    const domains = [
+      { name: "TechFlow.ai", category: "tech", tld: ".ai", premium: true },
+      { name: "CryptoVault.com", category: "finance", tld: ".com", premium: true },
+      { name: "SmartHomes.io", category: "tech", tld: ".io", premium: false },
+      { name: "EliteTravel.com", category: "travel", tld: ".com", premium: true },
+      { name: "DataSync.co", category: "tech", tld: ".co", premium: false },
+      { name: "GreenEnergy.org", category: "energy", tld: ".org", premium: true }
+      // add more domains as desired
+    ];
+    function renderDomains(list) {
+      const grid = document.getElementById("domainGrid");
+      grid.innerHTML = "";
+      if (list.length === 0) {
+        grid.innerHTML = "<p>No domains found matching criteria.</p>";
+        return;
+      }
+      list.forEach(domain => {
+        grid.innerHTML += `
+          <div class="domain-card">
+            ${domain.premium ? '<div class="premium-badge">Premium</div>' : ""}
+            <h3>${domain.name}</h3>
+            <p>Category: ${domain.category.charAt(0).toUpperCase() + domain.category.slice(1)}</p>
+            <p>Extension: ${domain.tld}</p>
+            <div class="domain-actions">
+              <button class="btn" onclick="alert('Negotiate for ' + '${domain.name}')">Negotiate</button>
+              <button class="btn" onclick="alert('View details for ' + '${domain.name}')">View Details</button>
+            </div>
+          </div>
+        `;
+      });
+    }
+    function filterDomains() {
+      const search = document.getElementById("domainSearch").value.toLowerCase();
+      const category = document.getElementById("categoryFilter").value;
+      const tld = document.getElementById("tldFilter").value;
+      const filtered = domains.filter(domain => {
+        const matchesSearch = domain.name.toLowerCase().includes(search);
+        const matchesCategory = (category === "all" || domain.category === category);
+        const matchesTld = (tld === "all" || domain.tld === tld);
+        return matchesSearch && matchesCategory && matchesTld;
+      });
+      renderDomains(filtered);
+    }
+    document.getElementById("domainSearch").addEventListener("input", filterDomains);
+    document.getElementById("categoryFilter").addEventListener("change", filterDomains);
+    document.getElementById("tldFilter").addEventListener("change", filterDomains);
+    renderDomains(domains);
+  </script>
+</body>
+</html>
